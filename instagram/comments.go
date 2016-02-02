@@ -20,7 +20,7 @@ type CommentsService struct {
 
 // Comment represents a comment on Instagram's media.
 type Comment struct {
-	CreatedTime int64  `json:"created_time,string,omitempty"`
+	CreatedTime int64  `json:"created_time,omitempty"`
 	Text        string `json:"text,omitempty"`
 	From        *User  `json:"from,omitempty"`
 	ID          string `json:"id,omitempty"`
